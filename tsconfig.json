@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": true,
+        "module": "es2020",
+        "target": "es5",
+        "allowJs": true,
+        "jsx": "react-jsx",
+        "allowUmdGlobalAccess": true,
+        "moduleResolution": "bundler",
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "baseUrl": "./"
+    },
+    "files": ["src/app/index.tsx"],
+    "include": ["**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules", "dist"],
+}
