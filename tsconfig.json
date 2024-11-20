@@ -15,7 +15,7 @@
         },
         "baseUrl": "./"
     },
-    "files": ["src/app/index.tsx"],
+    "files": ["src/index.tsx"],
     "include": ["**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules", "dist"],
 }
