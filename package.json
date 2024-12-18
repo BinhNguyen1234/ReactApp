@@ -52,7 +52,7 @@
         "css-loader": "^7.1.2",
         "depcheck": "^1.4.7",
         "dotenv-webpack": "^8.1.0",
-        "eslint": "^8.0.0",
+        "eslint": "^9.17.0",
         "eslint-config-standard-with-typescript": "^43.0.1",
         "eslint-plugin-react": "^7.37.2",
         "eslint-webpack-plugin": "^4.2.0",
@@ -69,10 +69,10 @@
         "ts-loader": "^9.5.1",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.3",
-        "webpack": "^5.96.1",
+        "webpack": "^5.97.1",
         "webpack-bundle-analyzer": "^4.10.2",
         "webpack-cli": "^5.1.4",
-        "webpack-dev-server": "^5.1.0",
+        "webpack-dev-server": "^5.2.0",
         "webpack-merge": "^6.0.1"
     }
 }
