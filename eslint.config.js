@@ -1,24 +1,24 @@
 export default [
     {
-        "env": {
+        env: {
             "browser": true,
             "es2020": true
         },
-        "ignorePatterns": [
+        ignorePatterns: [
             "webpack.common.config.js",
             "webpack.production.config.js",
             "webpack.local.config.js", 
             "postcss.config.js",
             "/dist/*"
         ],
-        "extends": ["standard-with-typescript"],
-        "parserOptions": {
+        extends: ["standard-with-typescript"],
+        parserOptions: {
             "ecmaVersion": "latest",
             "sourceType": "module"
         },
         
-        "plugins": ["react"],
-        "rules": {
+        plugins: ["react"],
+        rules: {
             "quotes": [2, "single"],
             "indent": [2, 4],
             "@typescript-eslint/indent": [2, 4],
