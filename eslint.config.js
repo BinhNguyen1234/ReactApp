@@ -1,10 +1,9 @@
 export default [
     {
-        env: {
-            "browser": true,
-            "es2020": true
+        languageOptions: {
+            ecmaVersion: 2020
         },
-        ignorePatterns: [
+        ignores: [
             "webpack.common.config.js",
             "webpack.production.config.js",
             "webpack.local.config.js", 
