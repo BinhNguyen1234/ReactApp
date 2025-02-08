@@ -14,6 +14,7 @@
         "online": "npx http-server ./dist -a localhost -p 7000 -o -c1",
         "check-package": "depcheck",
         "lint": "eslint",
+        "pack": "docker build -t react-app-image .",
         "analyze-prod": "webpack --node-env=production --config webpack.production.config.js --profile --json > analyze/stats.json && webpack-bundle-analyzer analyze/stats.json "
     },
     "author": "BinhNguyen",
