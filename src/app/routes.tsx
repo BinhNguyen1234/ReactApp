@@ -23,10 +23,15 @@ export const router = createBrowserRouter([
                 element: <Children></Children>,
                 children: [
                     {
+                        index: true,
                         path: "sibling",
                         element: <Sibling></Sibling>
                     }
                 ]
+            },
+            {
+                path: "/parent/sibling",
+                element: <Sibling></Sibling>
             }
         ]
     },
