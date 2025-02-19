@@ -16,7 +16,8 @@ const configCommon = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(_dirName, 'src', 'app', 'index.html'),
-            filename: 'index.html'
+            filename: 'index.html',
+            publicPath: "/"
         }),
         new Dotenv(),
         new CleanWebpackPlugin(),
