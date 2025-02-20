@@ -38,7 +38,17 @@ const configCommon = {
             },
             {
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
+                use: [
+                    MiniCssExtractPlugin.loader, 
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: false,
+                            importLoaders: 1
+                        }
+                    }, 
+                    'postcss-loader'
+                ]
             }
         ]
     },
