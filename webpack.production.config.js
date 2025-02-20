@@ -1,4 +1,4 @@
-import { merge, mergeWithRules } from 'webpack-merge'
+import { mergeWithRules } from 'webpack-merge'
 import TerserPlugin from 'terser-webpack-plugin'
 import configCommon from './webpack.common.config.js'
 const configProduction = {

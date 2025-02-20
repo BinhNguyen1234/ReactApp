@@ -1,7 +1,7 @@
 import { JSX } from "react";
 
 export default function Home (): JSX.Element {
-    return <>
+    return <div className="text-3xl font-bold underline">
     home
-    </>
+    </div>
 }

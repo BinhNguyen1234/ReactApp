@@ -1,4 +1,4 @@
-import { merge } from 'webpack-merge'
+import { mergeWithRules } from 'webpack-merge'
 import configCommon from './webpack.common.config.js'
 const configLocal = {
     mode: 'development',
