@@ -4,6 +4,16 @@ const configLocal = {
     mode: 'development',
     devtool: 'eval-source-map'
 }
-const config = merge(configCommon, configLocal)
+const config = mergeWithRules({
+    module: {
+        rules: {
+            test: 'match',
+            use: {
+                loader: 'match',
+                options: 'replace'
+            }
+        }
+    }
+})(configCommon, configLocal)
 
 export default config

@@ -1,4 +1,4 @@
-import { merge } from 'webpack-merge'
+import { merge, mergeWithRules } from 'webpack-merge'
 import TerserPlugin from 'terser-webpack-plugin'
 import configCommon from './webpack.common.config.js'
 const configProduction = {
@@ -24,5 +24,15 @@ const configProduction = {
         maxAssetSize: 512000
     }
 }
-const config = merge(configCommon, configProduction)
+const config = mergeWithRules({
+    module: {
+        rules: {
+            test: 'match',
+            use: {
+                loader: 'match',
+                options: 'replace'
+            }
+        }
+    }
+})(configCommon, configProduction)
 export default config
